@@ -6,6 +6,9 @@
   "directories": {
     "doc": "docs"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "jest-chain"
+  },
   "scripts": {
     "test": "NODE_DEBUG=performance node --inspect=127.0.0.1:7011 ./node_modules/jest/bin/jest.js --watch --env node"
   },
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/apachecn/prob140-textbook-zh#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "jest-chain": "^1.0.5"
   }
 }
